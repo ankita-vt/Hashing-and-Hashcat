@@ -97,7 +97,8 @@ Follow the instructions on the ROCm website to install OpenCL drivers
  
 6. Attack Modes
 a.	Dictionary Attack (-a 0 ):
-Utilizing a precompiled list of potential passwords, known as wordlists (e.g., rockyou.txt), can significantly enhance the efficiency of password cracking. This approach offers several advantages, including faster processing times, particularly for common passwords. 
+Utilizing a precompiled list of potential passwords, known as wordlists (e.g., rockyou.txt), can significantly enhance the efficiency of password cracking. This approach offers several advantages, including faster processing times, particularly for common passwords.
+![Description of the GIF](https://github.com/ankita-vt/Hashing-and-Hashcat/raw/main/Images/your-image-name.gif)
 For example, the command hashcat -m 0 -a 0 hash.txt rockyou.txt demonstrates how to implement this method using Hashcat, where hash.txt contains the hashes to be cracked and rockyou.txt serves as the wordlist.
 b.	Brute force/ Mask Attack (-a 3): 
 While a brute-force attack tests all possible combinations, a mask attack narrows the search to specific patterns based on known insights about the password. If you have information about the password structure, you can optimize the cracking process using a mask attack. 
